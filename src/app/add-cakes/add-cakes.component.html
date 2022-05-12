@@ -1,0 +1,16 @@
+<p>Add-Cakes</p>
+
+
+<form (ngSubmit)="addcakes()">
+    <div>
+        <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Enter name" required autofocus>
+</div> 
+<div>
+    <label for="price">price:</label>
+    <input type="price" name="number" [(ngModel)]="price"  placeholder="Enter price of the cake" required > 
+</div>
+<button type="submit">
+    submit
+</button>
+</form>

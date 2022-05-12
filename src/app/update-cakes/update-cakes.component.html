@@ -1,0 +1,23 @@
+<P>Update-Cakes</P>
+
+
+
+<form (ngsubmit)="updatecakes()">
+     <div> 
+         <label for="id">Id:</label>
+        <input type="number" name="id"[(ngModel)]="cakes.id" placeholder="Enter id" required autofocus >
+       </div> 
+
+       <div>
+       <label for="name">Name:</label>
+       <input type="text" name="name"[(ngModel)]="cakes.name" placeholder="Enter name" required autofocus>
+       </div>
+
+       <div>
+       <label for="price">price:</label>
+       <input type="price" name="price"[(ngModel)]="cakes.price"  placeholder="Enter price" required >
+      </div>
+<button type="submit">
+    submit
+</button>
+</form>

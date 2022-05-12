@@ -1,0 +1,26 @@
+<p>cakes</p>
+
+<table class="table table-bordered">
+
+<thead>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+        <th>Delete Cakes</th>
+        <th>Edit Cake Details</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let cake of cakes;">
+   
+            <td>{{cake.id}}</td>
+           <td>{{cake.name}}</td>
+           <td>{{cake.price}}</td>
+           <td><button type="button" (click)="deletecake(cake.id)"class="btn-danger"> DELETE</button></td>
+           <td><a routerLink="/update-cakes/{{cake.id}}" class="btn btn-info">Edit</a></td>
+
+
+        </tr>
+    </tbody>
+    
+</table>
